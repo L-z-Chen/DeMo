@@ -1,5 +1,5 @@
 # DeMo
-This package contains the supplementary material for [DeMo: Decoupled Momentum Optimization](https://arxiv.org/abs/2411.19870) (arXiv)
+This package contains the supplementary material for ICLR 2026 submission: **DeMo: Decoupled Momentum Optimization**
 
 A standalone PyTorch optimizer is provided in `demo.py`.
 
@@ -8,4 +8,3 @@ To launch the training jobs run `torchrun --nodes=8 --nproc-per-node=8 scripts/t
 
 For implementation in other PyTorch training pipelines, the standalone DeMo optimizer can be used as-is, the only additional modification needed is to disable the native Distributed Data Parallel gradient synchronization/all-reduce.
 
-Future updates will be on the [DisTrO](https://github.com/NousResearch/DisTrO) repo.
